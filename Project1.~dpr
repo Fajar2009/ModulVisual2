@@ -1,0 +1,31 @@
+program Project1;
+
+uses
+  Forms,
+  Unit1 in 'Unit1.pas' {FMainMenu},
+  Kalkulator in 'Kalkulator.pas' {FKalkulator},
+  PraktekMandiri1 in 'PraktekMandiri1.pas' {FPrakMandiri1},
+  Kondisional in 'Kondisional.pas' {FCKondisional},
+  NilaiBobotSiswa in 'NilaiBobotSiswa.pas' {FNilaiSiswa},
+  GrafikStringrid1 in 'GrafikStringrid1.pas' {FGrafikStringgrid},
+  GrafikStringridFull in 'GrafikStringridFull.pas' {FGrafikStringgridFull},
+  Unit2 in 'Unit2.pas' {FInfoPrakFull},
+  Database in 'Database.pas' {FInfoPrak},
+  TambahData in 'TambahData.pas' {FTambahData};
+               
+{$R *.res}
+  
+begin
+  Application.Initialize;
+  Application.CreateForm(TFMainMenu, FMainMenu);
+  Application.CreateForm(TFKalkulator, FKalkulator);
+  Application.CreateForm(TFPrakMandiri1, FPrakMandiri1);
+  Application.CreateForm(TFCKondisional, FCKondisional);
+  Application.CreateForm(TFNilaiSiswa, FNilaiSiswa);
+  Application.CreateForm(TFGrafikStringgrid, FGrafikStringgrid);
+  Application.CreateForm(TFGrafikStringgridFull, FGrafikStringgridFull);
+  Application.CreateForm(TFInfoPrakFull, FInfoPrakFull);
+  Application.CreateForm(TFInfoPrak, FInfoPrak);
+  Application.CreateForm(TFTambahData, FTambahData);
+  Application.Run;
+end.
